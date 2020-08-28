@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Video Games - Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <header>
+  <h1 id="title">Video Game Survey Form</h1>
+  <p id="description">Please tell us about your gaming experience</p>
+  </header>
+    
+  <form id="survey-form">
+    <div>
+    <label id="name-label" for="name">Name</label>
+    <input 
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      Placeholder="Please enter your name"
+      required>
+    
+    <label id="email-label" for="email">Email</label>
+    <input 
+    type="email"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="Please enter your Email here"
+    required/>
+    
+    <label id="number-label" for="number">Age (optional)</label>
+    <input
+    type="number"
+    name="number"
+    id="number"
+    placeholder="Age"
+    min="10"
+    max="90"
+    class="form-control"/>
+    
+    </div>
+    
+    <div class="form-group">
+      <p> How many hours a week do you play video games?</p>
+      <select 
+      id="dropdown"
+      name="duration"
+      class="form-control"
+      required>
+        
+        <option disabled selected value>Select duration</option>
+        <option value="0-1">< 1 hours</option>
+        <option value="1-2">1-2 hours</option>
+        <option value="2-3">2-3 hours</option>
+        <option value="3-4">3-4 hours</option>
+        <option value="4-6">4-6 hours</option>
+        <option value="8+">8+ hours</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>What game genre do you prefer the most?</p>
+      <label> 
+        <input
+        type="radio"
+        name="genres"
+        value="action"
+        checked/>Action
+      </label> 
+      <label> 
+        <input
+        type="radio"
+        name="genres"
+        value="FPS"
+        checked/>FPS
+      </label> 
+      <label> 
+        <input
+        type="radio"
+        name="genres"
+        id="genre"
+        value="strategy"
+        checked/>Strategy
+      </label> 
+      <label> 
+        <input
+        type="radio"
+        name="genres"
+        id="genre"
+        value="simulation"
+        checked/>Simulation
+      </label> 
+      <label> 
+        <input
+        type="radio"
+        name="genres"
+        id="genre"
+        value="puzzle"
+        checked/>Puzzle
+      </label> 
+    </div>
+    
+    <div class="form-group">
+      <p>What is your preferred device to play video games on?<p>
+      <select 
+      id="dropdown"
+      name="devices"
+      class="form-control"
+      required>
+        
+        <option disabled selected value>Selection gaming device</option>
+        <option value="Desktop">Desktop</option>
+        <option value="playstation">Playstation 4</option>
+        <option value="xbox">Xbox One</option>
+        <option value="switch">Nintendo Switch</option>
+        <option value="mobile">Mobile Phone</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What are the top 3 things you look for in a good game? (Check three)</p>
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="story-telling"
+        />Story-telling
+      </label> 
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="gameplay"
+        />Gameplay
+      </label>
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="interactivity"
+        />Interactivity
+      </label>
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="musicandsound"
+        />Music and sound
+      </label>
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="Rewards"
+        />Rewards
+      </label> 
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="mapdesign"
+        />Map design
+      </label> 
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="realism"
+        />Realism
+      </label> 
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="fun"
+        />Fun
+      </label> 
+      <label> 
+        <input
+        type="checkbox"
+        name="important factors"
+        value="challenging"
+        />Challenging
+      </label>                      
+    </div>
+    
+    <div class="form-group">
+      <p>Any additional comments or information?<p>
+      <textarea
+      id="comments"
+      class="input-textarea"
+      name="comment"
+      placeholder="Enter your comment here...">
+      </textarea>
+    </div>
+    
+    <div class="form-group">
+      <button
+      type="submit"
+      id="submit"
+      name="submit-button">Submit
+      </button>
+    </div>    
+  </form>
+</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  
+</body>
+</html>
